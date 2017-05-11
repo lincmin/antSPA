@@ -1,10 +1,12 @@
 {
-  "name": "webpack-react",
+  "name": "antSPA",
   "version": "1.0.0",
   "description": "use react,antDesign,webpack build Single Page Application",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devDemo": "export NODE_ENV=dev&&webpack-dev-server --config ./webpack/demo/webpack.demo.js --progress --colors --hot",
+    "buildDemo": "export NODE_ENV=production&&webpack --config ./webpack/demo/webpack.demo.js --progress --profile --colors"
   },
   "author": "lincmin",
   "license": "",
